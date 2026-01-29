@@ -1,13 +1,13 @@
 Project Overview :This project is developed as part of Nimap Infotech – Round 2 (Task-Based Project) selection process.
 
 The application demonstrates: Category Master (CRUD), Product Master (CRUD), Product–Category relationship and implemented Server-side pagination
-
+=========================================================================================
 Technology Stack
 Backend : Node.js + Express.js
 Frontend (view engine): EJS (Embedded JavaScript Templates)
 Database : MySQL
 Other Tools & Libraries: mysql2, body-parser, dotenv, nodemon
-
+=======================================================================================
 Project Features
 
 Page 1 : Category Master
@@ -37,7 +37,7 @@ Page3: Server-Side Pagination
 Pagination is implemented at the database level
 Example: Page size = 10, Page 2 → Fetches records 11–20 from DB
 
-
+=============================================================================================================
 How to Install & Run the Project
 Step 1: Clone the Repository
 git clone https://github.com/Rahul-Tankhiwale/Nimap-Round-2-solution.git
@@ -79,8 +79,9 @@ npm run dev
 
 Step 6: Open in Browser
 http://localhost:3000
-
+================================================================================================
 Output
+
 <img width="944" height="474" alt="page1" src="https://github.com/user-attachments/assets/c24c40c0-38b4-41de-8fd3-c58e052b4795" />
 <img width="960" height="477" alt="page2" src="https://github.com/user-attachments/assets/8d428ae0-8273-4523-b8e1-3bb2c518b5cd" />
 
