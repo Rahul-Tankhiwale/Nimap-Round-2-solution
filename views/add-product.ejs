@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nimap Machine Test</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h2>Add Product</h2>
+<form action="/products/add" method="POST">
+  <input type="text" name="product_name" placeholder="Product Name" required />
+
+  <select name="category_id" required>
+    <% categories.forEach(c => { %>
+      <option value="<%= c.category_id %>"><%= c.category_name %></option>
+    <% }) %>
+  </select>
+
+  <button>Add Product</button>
+</form>
+
+<a href="/products">Back to Product List</a>
+
+</body>
+</html>

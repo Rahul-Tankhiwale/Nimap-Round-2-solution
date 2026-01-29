@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nimap Machine Test</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+
+
+<h2>Edit Category</h2>
+
+<form action="/categories/edit/<%= category.category_id %>" method="POST">
+  <label>Category Name:</label>
+  <input
+    type="text"
+    name="category_name"
+    value="<%= category.category_name %>"
+    required
+  />
+
+  <button type="submit">Update Category</button>
+</form>
+
+<a href="/categories">⬅ Back to Category List</a>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nimap Machine Test</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+
+
+<h2>Product Master</h2>
+
+<a href="/products/add">Add Product</a>
+<a href="/categories">Back to Categories</a>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Category ID</th>
+    <th>Category Name</th>
+    <th>Actions</th>
+  </tr>
+  <% products.forEach(p => { %>
+    <tr>
+      <td><%= p.product_id %></td>
+      <td><%= p.product_name %></td>
+      <td><%= p.category_id %></td>
+      <td><%= p.category_name %></td>
+      <td>
+        <a href="/products/edit/<%= p.product_id %>">Edit</a>
+        <a href="/products/delete/<%= p.product_id %>">Delete</a>
+      </td>
+    </tr>
+  <% }) %>
+</table>
+
+<!-- Simple pagination -->
+<% if (page > 1) { %>
+  <a href="/products?page=<%= page-1 %>">Prev</a>
+<% } %>
+<a href="/products?page=<%= page+1 %>">Next</a>
+
+
+</body>
+</html>

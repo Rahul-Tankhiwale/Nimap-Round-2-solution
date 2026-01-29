@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nimap Machine Test</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+
+
+<h2>Edit Product</h2>
+
+<form action="/products/edit/<%= product.product_id %>" method="POST">
+  
+  <label>Product Name:</label>
+  <input
+    type="text"
+    name="product_name"
+    value="<%= product.product_name %>"
+    required
+  />
+
+  <br><br>
+
+  <label>Category:</label>
+  <select name="category_id" required>
+    <% categories.forEach(c => { %>
+      <option
+        value="<%= c.category_id %>"
+        <%= c.category_id === product.category_id ? 'selected' : '' %>>
+        <%= c.category_name %>
+      </option>
+    <% }) %>
+  </select>
+
+  <br><br>
+
+  <button type="submit">Update Product</button>
+</form>
+
+<a href="/products">⬅ Back to Product List</a>
+
+
+</body>
+</html>
