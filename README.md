@@ -37,8 +37,8 @@ Page3: Server-Side Pagination
 Pagination is implemented at the database level
 Example: Page size = 10, Page 2 → Fetches records 11–20 from DB
 
-=============================================================================================================
-How to Install & Run the Project
+=============================================================================================
+How to Install & Run the Project:
 Step 1: Clone the Repository
 git clone https://github.com/Rahul-Tankhiwale/Nimap-Round-2-solution.git
 
