@@ -80,4 +80,9 @@ npm run dev
 Step 6: Open in Browser
 http://localhost:3000
 
+Output
+<img width="944" height="474" alt="page1" src="https://github.com/user-attachments/assets/c24c40c0-38b4-41de-8fd3-c58e052b4795" />
+<img width="960" height="477" alt="page2" src="https://github.com/user-attachments/assets/8d428ae0-8273-4523-b8e1-3bb2c518b5cd" />
+
+
 
